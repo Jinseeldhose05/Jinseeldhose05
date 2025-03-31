@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>hi</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+  </head>
+<body>
+  <div class="hello">
+    <div class="left">
+      <img src="/images/apple.png" alt="Logo" class="photo">
+      <h1><a href="/"><%= message %></a></h1></h1>
+    </div>
+    <div class="rights">
+      <input type="search" placeholder="search.." class="search">
+      <button class="login">Login</button>
+      <img src="/images/more.png" alt="More options" class="more">
+    </div>
+  </div>
+    <div>
+    <div class="product-page">
+    <img src="/uploads/<%= product.image %>" alt="no image" class="product-image">
+    <div class="product-heading">
+    <h1><%= product.name %></h1>
+    <h4>₹ <%= product.price %></h4>
+    <div class="product-button">
+    <button class="buy">Buy Now</button>
+    <button>Add Cart</button>
+    <div class="description">
+        <p><%= product.description %></p>
+    </div>
+    </div>
+  </div>
+    </div>
+    <div class="comments">
+
+    </div>
+    </div>
+</body>

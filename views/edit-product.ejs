@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+  </head>
+  <body class="edit-products">
+<h2>Edit Product</h2>
+<form action="/update-product/<%= product._id %>" method="POST" >
+    <label>Product Name:</label>
+    <input type="text" name="name" value="<%= product.name %>" required><br>
+
+    <label>Price:</label>
+    <input type="number" name="price" value="<%= product.price %>" required><br>
+
+    <label>Description:</label>
+    <textarea name="description" required><%= product.description %></textarea><br>
+
+    <label>Image:</label>
+    <div>
+        <img src="/uploads/<%= product.image %>" alt="Image of product">
+    </div>
+    <input type="file" name="image"><br>
+    
+    <button type="submit">Update</button>
+</form>
+
+</body>
+</html>
